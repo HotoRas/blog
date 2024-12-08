@@ -3,7 +3,7 @@
         <h1 id="title"><a href="/">호토라즈의 블로그</a></h1>
         <h2 id="category-title">{{ route.params.category }}</h2>
         <div style="display: flex; align-items: center; gap: 12px">
-            다른 카테고리 :
+            다른 카테고리 : <div class="category-list"><a href="/">전체보기</a></div>
             <div v-for="category of categories" class="category-list">
                 <a :href="`/p/${category}`">{{ category }}</a>
             </div>

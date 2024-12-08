@@ -7,14 +7,14 @@
       <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
       <meta property="og:title" content="호토라즈의 블로그" />
       <meta property="og:description" content="호토라즈의 블로그" />
-      <meta property="og:image" content="/public/logo.png" />
+      <meta property="og:image" content="/logo.png" />
     </Head>
     <NuxtLayout>
       <div id="top-menu">
         <div class="logo-menu">
           <div class="logo-item">
             <a href="https://home.hotoras.kr">
-              <img src="/public/logo.png">
+              <img src="/logo.png">
             </a>
           </div>
         </div>
@@ -126,7 +126,7 @@ img {
   width: 100vw;
   height: 3em;
   display: flex;
-  background: #ff9899;
+  background: var(--accent);
   position: fixed;
   z-index: 9999999;
   top: 0;

@@ -187,7 +187,7 @@ img {
 
 #container {
   width: calc(100vw - 20px);
-  max-width: 640px;
+  max-width: 800px;
   margin: 100px auto 100px auto;
   display: flex;
   flex-direction: column;

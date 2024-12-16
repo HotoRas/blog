@@ -12,9 +12,13 @@ import { marked } from 'marked';
 const route = useRoute()
 var content
 try {
-    content = await $fetch(`https://raw.githubusercontent.com/HotoRas/HotoRas/main/docs/${route.params.category}/index.md`)
+    content = await $fetch(`https://raw.githubusercontent.com/HotoRas/HotoRas/main/docs/${route.params.category}/${route.params.sub}/index.md`)
 } catch (e) {
-    content = 'failed to fetch ' + route.params.category
+    try {
+        content = await $fetch(`https://raw.githubusercontent.com/HotoRas/HotoRas/main/docs/${route.params.category}/${route.params.sub.split('.md')[0]}.md`)
+    } catch (e) {
+        content = `failed to fetch ${route.params.category}${route.params.sub?`/${route.params.sub}`:''}`
+    }
 }
 var postContent = marked.parse(content)
 var postTitle = '' //postContent.split('<h1>')[1].split('</h1>')[0]

@@ -9,7 +9,7 @@
             </div>
         </div>
         -->
-        <div class="homepage-content" v-html="homepageContent"></div>
+        <div class="box-cont" v-html="homepageContent"></div>
     </div>
 </template>
 <script setup>
@@ -22,11 +22,11 @@ let mdContent = []
 let categories = []
 
 try {
-    content = await $fetch('https://raw.githubusercontent.com/HotoRas/HotoRas/main/docs/index.md')
+    content = (await $fetch('https://raw.githubusercontent.com/HotoRas/HotoRas/main/docs/index.md')).split('홈페이지\n')[1]
 } catch (e) {
     content = '<h2>failed to fetch homepage. visit origin <a href="https://home.hotoras.kr/" alt="homepage">here</a>.</h2>'
 }
-content.replace('(./', '(https://home.hotoras.kr/').replace('.md)', '.html)')
+//content.replace('(./', '(https://home.hotoras.kr/').replace('.md)', '.html)')
 
 let homepageContent = marked.parse(content)
 
@@ -53,4 +53,12 @@ async function getPost() {
         }
     }
 }
+
+useSeoMeta({
+    title: () => '호토라즈의 GitHub 홈페이지',
+    ogTitle: () => '호토라즈의 GitHub 홈페이지',
+    description: '호토라즈의 GitHub 홈페이지입니다.',
+    ogDescription: content.slice(0,100).replace(/\n\n/gm, ' ').replace(/\n/gm, ' '),
+    ogImage: '/logo.png',
+})
 </script>

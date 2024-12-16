@@ -27,7 +27,6 @@ const repoUri = 'HotoRas/blog'
 const blogContentPath = 'blog/md'
 console.log(`fetch from https://api.github.com/repos/${repoUri}/git/trees/main?recursive=1
 
-Please consult if the url is right!
 `)
 var folderList = await $fetch(`https://api.github.com/repos/${repoUri}/git/trees/main?recursive=1`)
 //console.log(folderList.tree)
@@ -56,10 +55,7 @@ async function getPost() {
                         console.log(`category: ${cat}`)
                         categories.push(cat)
 
-                        console.log(`begin request to
-    https://raw.githubusercontent.com/${repoUri}/main/${blogContentPath}/${post.path}
-
-Please consult if url is correct`)
+                        console.log(`sending request to: https://raw.githubusercontent.com/${repoUri}/main/${blogContentPath}/${post.path}`)
                         let content = await $fetch(`https://raw.githubusercontent.com/${repoUri}/main/${blogContentPath}/${post.path}`)
                         mdContent.push(content)
                     } else {

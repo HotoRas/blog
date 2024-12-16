@@ -23,10 +23,10 @@ let categories = []
 
 try {
     content = await $fetch('https://raw.githubusercontent.com/HotoRas/HotoRas/main/docs/index.md')
-    content.replace('(./', '(https://home.hotoras.kr/').replace('.md)', '.html)')
 } catch (e) {
     content = '<h2>failed to fetch homepage. visit origin <a href="https://home.hotoras.kr/" alt="homepage">here</a>.</h2>'
 }
+content.replace('(./', '(https://home.hotoras.kr/').replace('.md)', '.html)')
 
 let homepageContent = marked.parse(content)
 

@@ -63,7 +63,7 @@ export default {
  * fuck up and normalize everything
  * by normalize.css
  */
-@import url('/include/normalize.css');
+@import url('/normalize.css');
 
 /*basic settings*/
 

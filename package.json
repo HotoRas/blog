@@ -13,6 +13,7 @@
     "marked": "^15",
     "nuxt": "^3.14",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "@fontsource/monaspace-neon": "latest"
   }
 }

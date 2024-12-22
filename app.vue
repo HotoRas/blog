@@ -51,7 +51,7 @@
 </template>
 
 <script>
-
+import "@fontsource/monaspace-neon"
 
 export default {
   mounted() {
@@ -63,11 +63,11 @@ export default {
  * fuck up and normalize everything
  * by normalize.css
  */
-@import url('https://raw.githubusercontent.com/necolas/normalize.css/refs/heads/master/normalize.css');
+/*@import url('https://raw.githubusercontent.com/necolas/normalize.css/refs/heads/master/normalize.css');*/
 
 /*basic settings*/
 
-@import url('https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+@import url('https://cdn.jsdeliver.net/gh/wan2land/d2coding/d2coding-ligature-subset.css');
 
 @font-face {
   font-family: 'Pretendard';
@@ -89,6 +89,7 @@ export default {
   --fg: #262629;
   --border: #d7d7de;
   --bg: #f8f8fb;
+  --monospace: "Monaspace Neon", "D2Coding";
 }
 
 div {
@@ -107,6 +108,24 @@ body {
   overscroll-behavior-x: none;
   font-size: 14px;
   line-height: 1.6;
+}
+
+/* 나무위키 방식 렌더링 */
+del,
+s {
+  text-decoration: line-through;
+  color: gray;
+}
+
+del :hover,
+s :hover {
+  text-decoration: none;
+}
+
+/* 나무위키 방식 렌더링 끝 */
+
+code {
+  font-family: var(--monospace), monospace;
 }
 
 .post-content>h1,

@@ -63,7 +63,7 @@ export default {
  * fuck up and normalize everything
  * by normalize.css
  */
-@import './assets/normalize.css';
+@import './normalize.css';
 
 /*basic settings*/
 

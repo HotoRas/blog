@@ -59,6 +59,12 @@ export default {
 }
 </script>
 <style>
+/*
+ * fuck up and normalize everything
+ * by normalize.css
+ */
+@import url('/include/normalize.css');
+
 /*basic settings*/
 
 @import url('https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
@@ -121,21 +127,21 @@ img {
 }
 
 #top-menu {
-    box-sizing: border-box;
-    width: 100vw;
-    height: 3em;
-    display: flex;
-    background: var(--accent);
-    position: fixed;
-    z-index: 9999999;
-    top:0;
-    left: 0;
-    padding: 0 1em;
-    color: #fff;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-    box-shadow: 5px 5px 5px #00000011;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 3em;
+  display: flex;
+  background: var(--accent);
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  padding: 0 1em;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px #00000011;
 }
 
 #top-menu img {
@@ -208,24 +214,24 @@ img {
 }
 
 .box-cont-grid {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 10px;
-    font-size: 16px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .box-cont-grid img {
-    width: 100% !important;
-    max-width: unset !important;
-    aspect-ratio: 1 / 1 !important;
-    object-fit: cover;
-    object-position: center;
+  width: 100% !important;
+  max-width: unset !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover;
+  object-position: center;
 }
 
 /*categorylist*/

@@ -14,6 +14,7 @@
     "nuxt": "^3.14",
     "vue": "latest",
     "vue-router": "latest",
-    "@fontsource/monaspace-neon": "latest"
+    "@fontsource/monaspace-neon": "latest",
+    "d2coding": "latest"
   }
 }

@@ -51,7 +51,8 @@
 </template>
 
 <script>
-import "@fontsource/monaspace-neon"
+//import "@fontsource/monaspace-neon"
+import "d2coding/d2coding-subset.css"
 
 export default {
   mounted() {
@@ -67,7 +68,7 @@ export default {
 
 /*basic settings*/
 
-@import url('https://cdn.jsdeliver.net/gh/wan2land/d2coding/d2coding-ligature-subset.css');
+/*@import url('https://cdn.jsdeliver.net/gh/wan2land/d2coding/d2coding-ligature-subset.css');*/
 
 @font-face {
   font-family: 'Pretendard';
@@ -89,7 +90,7 @@ export default {
   --fg: #262629;
   --border: #d7d7de;
   --bg: #f8f8fb;
-  --monospace: "Monaspace Neon", "D2Coding";
+  --monospace: "D2Coding";
 }
 
 div {
@@ -124,7 +125,8 @@ s :hover {
 
 /* 나무위키 방식 렌더링 끝 */
 
-code {
+code,
+pre {
   font-family: var(--monospace), monospace;
 }
 

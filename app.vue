@@ -118,16 +118,40 @@ s {
   color: gray;
 }
 
-del :hover,
-s :hover {
+del:hover,
+s:hover {
   text-decoration: none;
 }
 
 /* 나무위키 방식 렌더링 끝 */
 
-code,
-pre {
+code {
   font-family: var(--monospace), monospace;
+}
+
+pre {
+  background-color: darkslategray;
+  border: 2px solid var(--accent-light);
+  color: white;
+}
+
+blockquote {
+  width: 90%;
+  position: relative;
+  border-left: 3px solid var(--accent);
+  padding-left: 10px;
+}
+
+blockquote p {
+  position: relative;
+  padding-left: 30px;
+}
+
+blockquote cite {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--accent-light);
+  text-align: right;
 }
 
 .post-content>h1,

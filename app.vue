@@ -32,9 +32,9 @@
             </a>
           </div>
           <div class="menu-item">
-            <a href="https://nekoplanet.xyz/@ras">
+            <a href="https://serafuku.moe/@ras">
               <i class="hgi-stroke hgi-bubble-chat-user"></i>
-              <span class="fullname"> 고양이별</span>
+              <span class="fullname"> 세라복모에</span>
             </a>
           </div>
           <div class="menu-item">

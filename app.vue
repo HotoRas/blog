@@ -321,4 +321,18 @@ a.post-list {
   flex-direction: column;
   align-items: center;
 }
+
+.post-content table, .post-content th, .post-content td {
+  border: 1px solid var(--border-dark);
+  border-collapse: collapse;
+  padding: 1px 5px;
+}
+
+.post-content td.app-semititle {
+  border-bottom: 1px solid var(--accent);
+}
+
+.post-content th {
+  border-bottom: 2px solid var(--accent);
+}
 </style>

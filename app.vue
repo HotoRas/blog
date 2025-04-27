@@ -89,6 +89,7 @@ export default {
   --accent-light: #ffddcc;
   --fg: #262629;
   --border: #d7d7de;
+  --border-dark: #48484c;
   --bg: #f8f8fb;
   --monospace: "D2Coding";
 }

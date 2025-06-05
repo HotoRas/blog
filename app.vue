@@ -172,7 +172,7 @@ img {
   display: flex;
   background: var(--accent);
   position: fixed;
-  z-index: 9999999;
+  z-index: 1;
   top: 0;
   left: 0;
   padding: 0 1em;
@@ -314,5 +314,10 @@ code {
   background: #eaeaea;
   border: 1px solid gray;
   padding: 0px 3px;
+}
+
+figure figcaption {
+  font-size: 0.8em;
+  color: #eee;
 }
 </style>

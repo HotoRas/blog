@@ -316,8 +316,8 @@ code {
   padding: 0px 3px;
 }
 
-figure figurecaption {
+figure figcaption {
   font-size: 0.8em;
-  color: #eee;
+  color: #222;
 }
 </style>

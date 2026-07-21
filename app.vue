@@ -45,6 +45,11 @@
           </div>
         </div>
       </div>
+      <p class=notify id=notification>
+        (안내) 본 블로그 사이트는 현재 사용하지 않으며, 향후 타 서비스로 마이그레이션 혹은 삭제 예정에 있습니다.<br>
+        서비스 변경 결정이 확정되는 경우 본 사이트에 다시 안내해드리겠습니다.<br>
+        <small>HotoRas, 2026</small>
+      </p>
       <NuxtPage />
     </NuxtLayout>
   </div>
